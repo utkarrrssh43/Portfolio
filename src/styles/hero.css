@@ -1,0 +1,88 @@
+.hero{
+  min-height:100vh;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  text-align:center;
+
+  position:relative;
+}
+
+.hero::before{
+  content:"";
+
+  position:absolute;
+
+  width:400px;
+  height:400px;
+
+  background:#7C3AED;
+
+  filter:blur(200px);
+
+  opacity:.3;
+}
+
+.hero-content{
+  z-index:10;
+}
+
+.intro{
+  color:#06B6D4;
+  margin-bottom:15px;
+}
+
+.hero h1{
+  font-size:4rem;
+}
+
+.typing-text{
+  margin-top:20px;
+  color:#7C3AED;
+  min-height:50px;
+}
+
+.hero-description{
+  margin-top:20px;
+  max-width:700px;
+  line-height:1.8;
+}
+
+.hero-buttons{
+  margin-top:30px;
+
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+
+  justify-content:center;
+}
+
+.btn{
+  padding:12px 25px;
+
+  border-radius:30px;
+
+  transition:.3s;
+}
+
+.primary-btn{
+  background:#7C3AED;
+  color:white;
+}
+
+.primary-btn:hover{
+  transform:translateY(-5px);
+}
+
+.secondary-btn{
+  border:2px solid #06B6D4;
+  color:#06B6D4;
+}
+
+.secondary-btn:hover{
+  background:#06B6D4;
+  color:white;
+}

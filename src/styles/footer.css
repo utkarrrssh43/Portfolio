@@ -1,0 +1,32 @@
+.footer {
+  background-color: #05070d;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+  padding: 50px 24px 36px;
+  text-align: center;
+}
+
+.footer h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 0.3px;
+}
+
+.footer p {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.footer p:first-of-type {
+  color: #9ca3af;
+}
+
+.footer p:last-of-type {
+  color: #4b5563;
+  font-size: 0.8rem;
+  margin-top: 16px;
+}
