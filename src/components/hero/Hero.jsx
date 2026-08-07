@@ -160,7 +160,7 @@ export default function Hero() {
           </p>
 
           <div className="hero-actions">
-            <a href="/resume.pdf" className="btn btn--primary" download>
+            <a href="https://drive.google.com/file/d/1hn9HPwZ6rHlKfL9gydNWfAkjMLn2MVOU/view?usp=sharing" className="btn btn--primary" download>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v12m0 0-4-4m4 4 4-4M5 20h14" />
               </svg>
