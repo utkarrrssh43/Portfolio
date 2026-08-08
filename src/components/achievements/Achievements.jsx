@@ -1,4 +1,4 @@
-import "../../styles/Achievements.css";
+import "../../styles/achievements.css";
 
 /* ---------- icons ---------- */
 
