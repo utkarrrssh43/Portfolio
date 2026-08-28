@@ -60,6 +60,10 @@
   padding: 24px;
 }
 
+.proficiency-card {
+  min-height: 450px;
+}
+
 .skill-card-title {
   color: #ffffff;
   font-size: 1rem;

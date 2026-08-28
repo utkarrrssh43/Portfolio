@@ -53,7 +53,7 @@ const Skills = () => {
         <p className="section-tag">
           <span className="tag-dot">03 · </span> Skills
         </p>
-        <div className="skills-badge-icon">A</div>
+        {/* <div className="skills-badge-icon">A</div> */}
       </div>
 
       <h2 className="skills-heading">Technologies I work with</h2>

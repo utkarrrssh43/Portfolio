@@ -23,17 +23,13 @@ export default function Navbar() {
               <path d="M19.5 15c.45 1.8 1.45 2.8 3.25 3.25-1.8.45-2.8 1.45-3.25 3.25-.45-1.8-1.45-2.8-3.25-3.25 1.8-.45 2.8-1.45 3.25-3.25Z" />
             </svg>
           </span>
-
           Utkarsh Sinha
         </a>
 
         <ul className="navbar-links">
           {NAV_LINKS.map((item) => (
             <li key={item.label}>
-              <a
-                href={item.href}
-                className={item.active ? "active" : ""}
-              >
+              <a href={item.href} className={item.active ? "active" : ""}>
                 {item.label}
               </a>
             </li>
@@ -41,8 +37,21 @@ export default function Navbar() {
         </ul>
 
         <a href="#contact" className="navbar-btn">
-          Let&rsquo;s Connect
-          <span className="navbar-btn__dot"></span>
+          <span className="navbar-btn__text">Let&rsquo;s Connect</span>
+
+          <svg
+            className="navbar-btn__arrow"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M5 12h14m-6-6 6 6-6 6"
+            />
+          </svg>
         </a>
       </div>
     </header>

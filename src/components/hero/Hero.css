@@ -87,11 +87,13 @@
 }
 
 @keyframes twinkle {
+
   0%,
   100% {
     opacity: 0.15;
     transform: scale(1);
   }
+
   50% {
     opacity: 0.9;
     transform: scale(1.6);
@@ -150,15 +152,32 @@
   font-size: 14.5px;
   font-weight: 500;
   padding-bottom: 8px;
-  transition: color 0.2s ease;
+
+  /* subtle glow */
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.18);
+
+  transition:
+    color 0.25s ease,
+    text-shadow 0.25s ease;
 }
 
 .hero-nav__links a:hover {
-  color: var(--text);
+  color: #ffffff;
+
+  /* stronger glow on hover */
+  text-shadow:
+    0 0 5px rgba(255, 255, 255, 0.7),
+    0 0 12px rgba(125, 178, 255, 0.55),
+    0 0 20px rgba(77, 141, 255, 0.3);
 }
 
 .hero-nav__links a.is-active {
   color: var(--blue-soft);
+
+  /* active Home glow */
+  text-shadow:
+    0 0 5px rgba(125, 178, 255, 0.7),
+    0 0 12px rgba(77, 141, 255, 0.5);
 }
 
 .hero-nav__links a.is-active::after {
@@ -170,6 +189,10 @@
   height: 2px;
   border-radius: 2px;
   background: var(--blue);
+
+  box-shadow:
+    0 0 6px rgba(77, 141, 255, 0.7),
+    0 0 12px rgba(77, 141, 255, 0.35);
 }
 
 .hero-nav__cta {
@@ -435,4 +458,227 @@
   .hero-particle {
     animation: none;
   }
+}
+
+/* =========================================
+   HERO SOCIAL ICONS
+   ========================================= */
+
+.hero .hero-socials.example-2 {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  padding: 0;
+  margin: 28px 0 0;
+  gap: 10px;
+}
+
+.hero .hero-socials.example-2 .icon-content {
+  margin: 0;
+  padding: 0.35rem;
+  position: relative;
+  list-style: none;
+}
+
+.hero .hero-socials.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%) translateY(10px);
+
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+
+  transition: all 0.3s ease;
+  z-index: 20;
+}
+
+.hero .hero-socials.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(8px);
+}
+
+.hero .hero-socials.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 46px;
+  height: 46px;
+
+  border-radius: 50%;
+
+  color: #4d4d4d;
+  background-color: #fff;
+
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.hero .hero-socials.example-2 .icon-content a:hover {
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 3px 2px 45px 0 rgb(0 0 0 / 12%);
+}
+
+.hero .hero-socials.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 2;
+
+  width: 25px;
+  height: 25px;
+
+  transition: transform 0.3s ease;
+}
+
+.hero .hero-socials.example-2 .icon-content a:hover svg {
+  transform: scale(1.05);
+}
+
+.hero .hero-socials.example-2 .icon-content a .filled {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 0;
+
+  background-color: #000;
+
+  transition: height 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.hero .hero-socials.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+/* GitHub */
+.hero .hero-socials.example-2 .icon-content a[data-social="github"] .filled,
+.hero .hero-socials.example-2 .icon-content a[data-social="github"]~.tooltip {
+  background-color: #24262a;
+}
+
+/* LinkedIn */
+.hero .hero-socials.example-2 .icon-content a[data-social="linkedin"] .filled,
+.hero .hero-socials.example-2 .icon-content a[data-social="linkedin"]~.tooltip {
+  background-color: #0274b3;
+}
+
+/* LeetCode */
+.hero .hero-socials.example-2 .icon-content a[data-social="leetcode"] .filled,
+.hero .hero-socials.example-2 .icon-content a[data-social="leetcode"]~.tooltip {
+  background-color: #f89f1b;
+}
+
+/* Instagram */
+.hero .hero-socials.example-2 .icon-content a[data-social="instagram"] .filled,
+.hero .hero-socials.example-2 .icon-content a[data-social="instagram"]~.tooltip {
+  background: linear-gradient(45deg,
+      #405de6,
+      #5b51db,
+      #b33ab4,
+      #c135b4,
+      #e1306c,
+      #fd1f1f);
+}
+
+/* =========================================
+   RESUME BUTTON
+   Madflows Uiverse Design
+   ========================================= */
+
+.hero .resume-button {
+  position: relative;
+  overflow: hidden;
+
+  height: 3rem;
+  padding: 0 2rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 1.5rem;
+
+  background: #3d3a4e;
+  background-size: 400%;
+
+  color: #fff;
+  border: none;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  z-index: 1;
+}
+
+.hero .resume-button:hover::before {
+  transform: scaleX(1);
+}
+
+.hero .resume-button .button-content {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  white-space: nowrap;
+}
+
+.hero .resume-button::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+
+  width: 100%;
+  height: inherit;
+
+  border-radius: inherit;
+
+  background: linear-gradient(82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%);
+
+  transition: all 0.475s;
+
+  z-index: 1;
+}
+
+.hero .resume-button svg {
+  width: 19px;
+  height: 19px;
+
+  flex-shrink: 0;
 }
