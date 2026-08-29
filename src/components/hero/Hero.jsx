@@ -378,7 +378,10 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-text">
           <p className="hero-greeting">Hi, I&rsquo;m</p>
-          <h1 className="hero-name">Utkarsh Sinha</h1>
+          <h1 className="hero-name">
+            Utkarsh{" "}
+            <span className="experience__title-highlight">Sinha</span>
+          </h1>
           <h2 className="hero-tagline">
             I build scalable web apps and solve{" "}
             <span className="hero-tagline__highlight">real-world</span>{" "}
@@ -425,7 +428,7 @@ export default function Hero() {
               View My Work
             </a>
           </div> */}
-          
+
           <div className="hero-actions">
             <a
               href="https://drive.google.com/file/d/1hn9HPwZ6rHlKfL9gydNWfAkjMLn2MVOU/view?usp=sharing"
@@ -465,7 +468,7 @@ export default function Hero() {
               View My Work
             </a>
           </div>
-          
+
           {/* Updated Social Icons */}
           <ul className="hero-socials example-2">
             {SOCIALS.map((social) => (

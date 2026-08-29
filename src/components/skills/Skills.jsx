@@ -56,7 +56,10 @@ const Skills = () => {
         {/* <div className="skills-badge-icon">A</div> */}
       </div>
 
-      <h2 className="skills-heading">Technologies I work with</h2>
+      <h2 className="skills-heading">
+        Technologies{" "}
+        <span className="experience__title-highlight">I work with</span>
+      </h2>
 
       <div className="skills-content">
         <div className="skills-left">

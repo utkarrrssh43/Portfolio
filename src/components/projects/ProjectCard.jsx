@@ -1,43 +1,51 @@
-import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 
-const ProjectCard = ({ project, onOpen }) => {
+const ProjectCard = ({ project, index, onClick }) => {
   return (
     <div
       className="project-card"
-      onClick={() => onOpen(project)}
+      onClick={onClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          onClick();
+        }
+      }}
     >
-      <h3>{project.title}</h3>
+      <div className="project-image-box">
+        <span>add image at /assets/project-{index + 1}.jpg</span>
+      </div>
 
-      <p>{project.description}</p>
+      <h3 className="project-title">{project.title}</h3>
 
-      <div className="tech-stack">
-        {project.technologies.map((tech, index) => (
-          <span key={index} className="tech-badge">
-            {tech}
+      <p className="project-description">
+        {project.description}
+      </p>
+
+      <div className="project-tags">
+        {project.tags.map((tag, idx) => (
+          <span className="project-tag" key={idx}>
+            {tag.icon && (
+              <span className="tag-icon">
+                {tag.icon}
+              </span>
+            )}
+            {tag.name}
           </span>
         ))}
       </div>
 
-      <div
-        className="project-links"
-        onClick={(e) => e.stopPropagation()}
+      <button
+        className="project-view-details"
+        onClick={(e) => {
+          e.stopPropagation();
+          onClick();
+        }}
       >
-        <a
-          href={project.github}
-          target="_blank"
-          rel="noreferrer"
-        >
-          GitHub
-        </a>
-
-        <a
-          href={project.demo}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Live Demo
-        </a>
-      </div>
+        View Details
+        <FaArrowRight />
+      </button>
     </div>
   );
 };
