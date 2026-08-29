@@ -379,8 +379,7 @@ export default function Hero() {
         <div className="hero-text">
           <p className="hero-greeting">Hi, I&rsquo;m</p>
           <h1 className="hero-name">
-            Utkarsh{" "}
-            <span className="experience__title-highlight">Sinha</span>
+            Utkarsh <span className="experience__title-highlight">Sinha</span>
           </h1>
           <h2 className="hero-tagline">
             I build scalable web apps and solve{" "}
@@ -453,19 +452,21 @@ export default function Hero() {
             </a>
 
             <a href="#projects" className="btn btn--secondary">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M5 12h14m0 0-6-6m6 6-6 6"
-                />
-              </svg>
-              View My Work
+              <span className="btn--secondary-content">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5 12h14m0 0-6-6m6 6-6 6"
+                  />
+                </svg>
+                View My Work
+              </span>
             </a>
           </div>
 

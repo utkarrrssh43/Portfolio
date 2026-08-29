@@ -326,6 +326,146 @@
   background: rgba(255, 255, 255, 0.04);
 }
 
+.btn--secondary {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 24px;
+
+  background: transparent;
+  border: 2px solid var(--border);
+
+  color: var(--text);
+  text-decoration: none;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  overflow: hidden;
+
+  isolation: isolate;
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* Background animation layer */
+
+.btn--secondary::before {
+  content: "";
+
+  position: absolute;
+  top: -2px;
+  left: -2px;
+
+  width: calc(100% + 6px);
+  height: calc(100% + 2px);
+
+  background: #212121;
+
+  z-index: 0;
+
+  transform: scaleY(1);
+
+  transition:
+    transform 0.3s ease-out,
+    height 0.3s ease-out;
+}
+
+
+/* Second animation layer */
+
+.btn--secondary::after {
+  content: "";
+
+  position: absolute;
+  top: -2px;
+  left: -2px;
+
+  width: calc(100% + 4px);
+  height: calc(100% - 50px);
+
+  background: #212121;
+
+  z-index: 1;
+
+  transform: scaleY(1);
+
+  transition: transform 0.3s ease-out;
+}
+
+
+/* IMPORTANT:
+   Text + icon stay above pseudo-elements */
+
+.btn--secondary-content {
+  position: relative;
+
+  z-index: 3;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  color: inherit;
+}
+
+
+/* Arrow */
+
+.btn--secondary-content svg {
+  width: 18px;
+  height: 18px;
+
+  flex-shrink: 0;
+
+  transition: transform 0.3s ease;
+}
+
+
+/* Hover animation */
+
+.btn--secondary:hover::before {
+  transform: translateY(-25px);
+  height: 0;
+}
+
+.btn--secondary:hover::after {
+  transform: scaleX(0);
+  transition-delay: 0.15s;
+}
+
+
+/* Hover state */
+
+.btn--secondary:hover {
+  color: #1683ff;
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Arrow movement */
+
+.btn--secondary:hover .btn--secondary-content svg {
+  transform: translateX(5px);
+}
+
+
+/* Keyboard accessibility */
+
+.btn--secondary:focus-visible {
+  outline: 2px solid #1683ff;
+  outline-offset: 4px;
+}
+
 .hero-socials {
   display: flex;
   align-items: center;
