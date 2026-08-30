@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website, where I showcase my projects, skills, experience, and achievements.
 
-[![Live Portfolio](https://img.shields.io/badge/🌐%20Live%20Portfolio-Visit%20Website-blue?style=for-the-badge)](YOUR-VERCEL-LINK)
+[![Live Portfolio](https://img.shields.io/badge/🌐%20Live%20Portfolio-Visit%20Website-blue?style=for-the-badge)](https://portfolio-ic8a-oixn2uv73-ace-master2.vercel.app)
 
 ## 👨‍💻 About Me
 
@@ -27,7 +27,7 @@ I'm a developer passionate about building modern, responsive, and user-friendly 
 
 ## 🌐 Portfolio
 
-👉 **Visit my live portfolio:** [YOUR-VERCEL-LINK](YOUR-VERCEL-LINK)
+👉 **Visit my live portfolio:** [My Live Portfolio](https://portfolio-ic8a-oixn2uv73-ace-master2.vercel.app)
 
 ---
 
