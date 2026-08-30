@@ -1,16 +1,34 @@
-# React + Vite
+# 🚀 My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website, where I showcase my projects, skills, experience, and achievements.
 
-Currently, two official plugins are available:
+[![Live Portfolio](https://img.shields.io/badge/🌐%20Live%20Portfolio-Visit%20Website-blue?style=for-the-badge)](YOUR-VERCEL-LINK)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 👨‍💻 About Me
 
-## React Compiler
+I'm a developer passionate about building modern, responsive, and user-friendly web applications.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- HTML
+- CSS
+- JavaScript
+- React.js
+- Node.js
+- Express.js
+- MongoDB
+- Git & GitHub
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Featured Projects
+
+- **Client Desk** — Client and project management platform
+- **SAMS** — Software Asset Management System
+- Other projects showcased on my portfolio
+
+## 🌐 Portfolio
+
+👉 **Visit my live portfolio:** [YOUR-VERCEL-LINK](YOUR-VERCEL-LINK)
+
+---
+
+⭐ If you like my work, feel free to star this repository!
