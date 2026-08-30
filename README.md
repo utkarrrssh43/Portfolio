@@ -7,7 +7,7 @@
 [![Live Portfolio](https://img.shields.io/badge/🌐_Live_Demo-Visit_Website-2ea44f?style=for-the-badge)](https://portfolio-ic8a-oixn2uv73-ace-master2.vercel.app)
 [![Made with React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 
 </div>
 
@@ -23,7 +23,6 @@ Hi! I'm a developer passionate about building modern, responsive, and user-frien
 - ⚡ Fast, single-page app experience powered by React
 - 🗂️ Dedicated sections for projects, skills, and experience
 - 📬 Contact section for reaching out directly
-- 🌙 *(Optional: mention dark mode, animations, etc. if applicable)*
 
 ## 🛠️ Tech Stack
 
@@ -42,8 +41,6 @@ Hi! I'm a developer passionate about building modern, responsive, and user-frien
 | **SAMS** | Software Asset Management System | [Repo](#) · [Live](#) |
 | *More projects...* | Explore the full list on the live site | [Visit Portfolio](https://portfolio-ic8a-oixn2uv73-ace-master2.vercel.app) |
 
-> 💡 Replace the `#` links above with the actual repo/live links for each project.
-
 ## 🌐 Live Demo
 
 👉 **[Visit my live portfolio](https://portfolio-ic8a-oixn2uv73-ace-master2.vercel.app)**
@@ -56,7 +53,6 @@ Want to run this project locally? Follow the steps below.
 
 - [Node.js](https://nodejs.org/) (v16 or higher)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
-- [MongoDB](https://www.mongodb.com/) (local instance or Atlas connection string)
 
 ### Installation
 
@@ -82,7 +78,7 @@ Create a `.env` file in the `server` directory with the following:
 
 ```env
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
+PostgreSQL_URI=your_PostgreSQL_connection_string
 ```
 
 ### Running Locally
@@ -111,8 +107,6 @@ The app should now be running at `http://localhost:3000` 🎉
 └── README.md
 ```
 
-> 💡 Adjust this to match your actual folder layout.
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -127,9 +121,9 @@ Contributions, issues, and feature requests are welcome!
 
 **Utkarsh Sinha**
 
-- Portfolio: [portfolio-ic8a-oixn2uv73-ace-master2.vercel.app](https://portfolio-ic8a-oixn2uv73-ace-master2.vercel.app)
-- GitHub: [@your-username](https://github.com/utkarrrssh43)
-- LinkedIn: [Your Name](https://linkedin.com/in/your-profile)
+- Portfolio: [Link](https://portfolio-ic8a-oixn2uv73-ace-master2.vercel.app)
+- GitHub: [@utkarrrssh43](https://github.com/utkarrrssh43)
+- LinkedIn: [Utkarsh Sinha](https://linkedin.com/in/your-profile)
 - Email: utkarrrssh43@gmail.com
 
 ## 📄 License
