@@ -98,12 +98,9 @@ The app should now be running at `http://localhost:3000` 🎉
 ## 📁 Project Structure
 
 ```
-├── client/          # React frontend
-│   ├── src/
-│   └── public/
-├── server/          # Express backend
-│   ├── routes/
-│   └── models/
+├          # React frontenvd
+│── src/
+│── public/
 └── README.md
 ```
 
