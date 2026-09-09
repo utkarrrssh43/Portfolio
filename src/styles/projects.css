@@ -971,3 +971,94 @@
   color: #5aa9ff;
   gap: 14px;
 }
+
+/* ==========================================================
+   project-card-glow.css
+   Cursor-tracked spotlight effect for .project-card, adapted
+   from a Tailwind/TSX "GlowCard" component into plain CSS that
+   reads from this project's global tokens (index.css).
+   ========================================================== */
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  /* keeps the glow layers contained to this card */
+}
+
+/* Everything real (image, title, tags, button) sits above the glow. */
+.project-card-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- soft fill spotlight that follows the cursor ---------- */
+
+.project-card-spot {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  background: radial-gradient(320px circle at var(--glow-x, 50%) var(--glow-y, 50%),
+      rgba(77, 141, 255, 0.16),
+      transparent 70%);
+}
+
+/* ---------- glowing border ring that traces the cursor ---------- */
+
+.project-card-border-glow {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  padding: 1px;
+  /* controls the ring thickness */
+  background: radial-gradient(240px circle at var(--glow-x, 50%) var(--glow-y, 50%),
+      rgba(125, 178, 255, 0.9),
+      rgba(56, 189, 248, 0.35) 45%,
+      transparent 75%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* ---------- reveal on hover / keyboard focus ---------- */
+
+.project-card:hover .project-card-spot,
+.project-card:focus-visible .project-card-spot {
+  opacity: 1;
+}
+
+.project-card:hover .project-card-border-glow,
+.project-card:focus-visible .project-card-border-glow {
+  opacity: 1;
+}
+
+/* Keep the existing focus outline usable alongside the glow ring. */
+.project-card:focus-visible {
+  outline: 2px solid var(--color-blue, #4d8dff);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .project-card-spot,
+  .project-card-border-glow {
+    transition: none;
+  }
+}
+
+/* Pointer tracking needs a real pointer — skip the effect on touch
+   devices where there's no hover state to trigger it anyway. */
+@media (hover: none) {
+
+  .project-card-spot,
+  .project-card-border-glow {
+    display: none;
+  }
+}
