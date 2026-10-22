@@ -4,7 +4,7 @@
 
 ### A modern, responsive personal portfolio built with the MERN stack
 
-[![Live Portfolio](https://img.shields.io/badge/🌐_Live_Demo-Visit_Website-2ea44f?style=for-the-badge)](https://portfolio-ic8a-oixn2uv73-ace-master2.vercel.app)
+[![Live Portfolio](https://img.shields.io/badge/🌐_Live_Demo-Visit_Website-2ea44f?style=for-the-badge)](portfolio-ace-master2.vercel.app)
 [![Made with React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
@@ -39,11 +39,11 @@ Hi! I'm a developer passionate about building modern, responsive, and user-frien
 |---|---|---|
 | **Client Desk** | Client and project management platform | [Repo](#) · [Live](#) |
 | **SAMS** | Software Asset Management System | [Repo](#) · [Live](#) |
-| *More projects...* | Explore the full list on the live site | [Visit Portfolio](https://portfolio-ic8a-oixn2uv73-ace-master2.vercel.app) |
+| *More projects...* | Explore the full list on the live site | [Visit Portfolio](portfolio-ace-master2.vercel.app) |
 
 ## 🌐 Live Demo
 
-👉 **[Visit my live portfolio](https://portfolio-ic8a-oixn2uv73-ace-master2.vercel.app)**
+👉 **[Visit my live portfolio](portfolio-ace-master2.vercel.app)**
 
 ## 🚀 Getting Started
 
