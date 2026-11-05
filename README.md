@@ -4,7 +4,7 @@
 
 ### A modern, responsive personal portfolio built with the MERN stack
 
-[![Live Portfolio](https://img.shields.io/badge/🌐_Live_Demo-Visit_Website-2ea44f?style=for-the-badge)](portfolio-woad-sigma-25.vercel.app)
+[![Live Portfolio](https://img.shields.io/badge/🌐_Live_Demo-Visit_Website-2ea44f?style=for-the-badge)](https://portfolio-woad-sigma-25.vercel.app)
 [![Made with React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
